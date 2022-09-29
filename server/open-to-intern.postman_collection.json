@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "212d8819-e00c-48a1-b770-5d7500513462",
+		"name": "Project-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20527530"
+	},
+	"item": [
+		{
+			"name": "colleges",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mam\",\r\n    \"fullName\": \"Murshidabad Adarsha Mahavidlaya\",\r\n    \"logoLink\": \"https://t.ly/8JRx\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/functionup/colleges",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"functionup",
+						"colleges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "interns",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"Shayan Biswas\",\r\n   \"email\": \"mam@gmail.com\",\r\n   \"mobile\": \"1111111111\",\r\n   \"collegeName\": \"Murshidabad Adarsha Mahavidlaya\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/functionup/interns",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"functionup",
+						"interns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "collegeDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/functionup/collegeDetails?collegeName=mam",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"functionup",
+						"collegeDetails"
+					],
+					"query": [
+						{
+							"key": "collegeName",
+							"value": "mam"
+						},
+						{
+							"key": "isDeleted",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "collegeId",
+							"value": "6321effdf81476a49db4c209",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "frontend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"iitdg\",\r\n    \"fullName\": \"Indian Instritute of Technolodgy Delhi\",\r\n    \"logoLink\": \"https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/1200px-Indian_Institute_of_Technology_Delhi_Logo.svg.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stg.functionup.org/functionup/colleges",
+					"protocol": "https",
+					"host": [
+						"stg",
+						"functionup",
+						"org"
+					],
+					"path": [
+						"functionup",
+						"colleges"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
